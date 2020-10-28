@@ -35,11 +35,17 @@ public class MyLinkedList<K> {
 		myNode.setNext(newNode);
 		newNode.setNext(tempNode);	
 	}
-	public INode delete() {
+	public INode pop() {
 		INode tempNode =  this.head ;
 		this.head = this.head.getNext();
 		return tempNode;	
 	}
+	public boolean isEmpty() {
+        if (this.head == null)
+            return true;
+        else
+            return false;
+    }
 	public void printNodes() {
 		StringBuffer myNodes = new StringBuffer("My Nodes  ");
 		INode tempNode = head ;
