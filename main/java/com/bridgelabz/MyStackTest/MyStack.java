@@ -28,4 +28,7 @@ public class MyStack<K> {
 		myLinkedList.append(myNode);
 		
 	}
+	public INode dequeue() {
+		return myLinkedList.pop();
+	}
 }
