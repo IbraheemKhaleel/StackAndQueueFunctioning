@@ -24,4 +24,8 @@ public class MyStack<K> {
 	public boolean isEmpty() {
 		return myLinkedList.isEmpty();
 	}
+	public void enqueu(INode myNode) {
+		myLinkedList.append(myNode);
+		
+	}
 }
